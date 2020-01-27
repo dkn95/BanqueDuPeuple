@@ -57,6 +57,7 @@
                   <li class="menu-active"><a href="#intro">Accueil</a></li>
                   <li><a href="src/view/indexBanque.php?view=client">Gestion Clients</a></li>
                   <li><a href="src/view/indexBanque.php?view=compte">Gestion Comptes</a></li>
+                  <li><a href="src/view/indexBanque.php?view=operation">Gestion Opérations</a></li>
                   <li><a href="src/view/indexBanque.php?view=utilisateur">Gestion Utilisateurs</a></li>
                   <li class="menu-active"><a id="deconnexion" href="/BanqueDuPeuple/src/controller/userController.php?deconnexion=1">Déconnexion</a></li>
                 </ul>

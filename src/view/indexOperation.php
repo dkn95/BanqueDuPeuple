@@ -7,14 +7,15 @@
 		$numCompte = "";
 	}
  ?>
-<div class="aligner">
-	<input type="text" name="numeroCompte" class="champsNewC" style="width: 300px" id="numeroCompte" placeholder="NUMERO DE COMPTE" value="<?= $numCompte ?>" onblur="recherche()">
+<div class="search_op">
+	<input type="text" name="numeroCompte" class="form-groupe1" style="width: 300px" id="numeroCompte" placeholder="NUMERO DE COMPTE" value="<?= $numCompte ?>" onblur="recherche()">
 </div>
 <?php
 	if (isset($_GET['ok'])) {
 		if($_GET['ok'] == 0)
-		{
-			echo "COMPTE NON TROUVEE!!!!";
+		{?>
+			<p class="cpt_search">Compte non Trouvee !!!</p>
+		<?php
 			$_SESSION['compte'] = null;
 			$_SESSION['operations'] = null;
 		}
@@ -31,22 +32,21 @@
 			?>
 			<form method="POST" action="/BanqueDuPeuple/src/controller/opController.php?idCompte=<?= $compte['id'] ?>">
 				<fieldset class="newOp">
-			        <legend class="newopL" align="center">OPERATION</legend>
-			        <table class="tab_complet">
-			            <tr>
-			                <td class="formul_tab">
-		                    	<select class="champsNewC" style="width: 200px;" name="typeOperation">
-		                    		<option selected>depot</option>
-		                    		<option>retrait</option>
-		                    	</select>
-		                    </td>
-			            </tr>
-			            <tr>
-			                <td class="formul_tab"><input class="champsNewC" type="number" name="montant" id="montant" placeholder="Montant" min="500" required></td>
-			            </tr>
-			        </table>
-			    <br>
-			    <div class="aligner"><input class="btn" type="submit" name="ajoutOp" value="Valider"></div>
+					<div>
+						<h3 class="op_title">OPERATION</h3> 
+					</div>
+					<div align="center">
+						<select class="form-group1" name="typeOperation">
+							<option selected>depot</option>
+							<option>retrait</option>
+						</select>
+					</div>
+					<div align="center">
+						<input class="form-group" type="number" name="montant" id="montant" placeholder="Montant" min="500" required>
+					</div>
+			    	<div align="center">
+						<input class="form-submit" type="submit" name="ajoutOp" value="Valider">
+					</div>
 			    </fieldset>
 			</form>
 			<br>
@@ -64,32 +64,42 @@
 			}
 			 ?>
 			 <br>
-			 <fieldset class="dkn">
-			        <legend class="newopL" align="center">INFOS CLIENT</legend>
-			 <table class="tabClient">
-			 	<tr>
-			 		<td><span>Nom:</span> <?= $client['nom'] ?></td>
-			 		<td><span>Prenom:</span> <?= $client['prenom'] ?></td>
-			 	</tr>
-			 	<tr>
-			 		<td><span>Adresse:</span> <?= $client['adresse'] ?></td>
-			 		<td><span>Téléphone:</span> <?= $client['tel'] ?></td>
-			 	</tr>
-			 </table>
+			 <fieldset class="field_info">
+			 	<div>
+					<h3 class="op_title">Infos Client</h3>
+				</div>
+				 <div style="float:left; margin-left:2%">
+					<div>
+						<p class="name_field"><span>Nom:</span> <?= $client['nom'] ?></p>
+					</div>
+					<div>
+						<p class="name_field"><span>Prenom:</span> <?= $client['prenom'] ?></p>
+					</div>
+				 </div>
+				 <div style="float:right;">
+					<div>
+						<p class="name_field"><span>Adresse:</span> <?= $client['adresse'] ?></p>
+					</div>
+					<div>
+						<p class="name_field"><span>Téléphone:</span> <?= $client['tel'] ?></p>
+					</div>	
+				 </div>
+				 
+				 
 			 </fieldset>
 			 <br>
-			 <fieldset class="dkn">
-			        <legend class="newopL" align="center">INFOS COMPTE</legend>
-			 <table class="tabClient">
-			 	<tr>
-			 		<td><span>Solde:</span></td>
-			 		<td><?= $compte['solde'] ?></td>
-			 	</tr>
-			 </table>
+			 <fieldset class="field_info1">
+				<div>
+					<h3 class="op_title">Infos Compte</h3>	
+				</div>
+				<div align="center">
+					<p class="name_field"><span>Solde:</span> <?= $compte['solde'] ?></p>
+				</div>
+			 
 			 </fieldset>
-			 <br>
-			 <fieldset class="dkn1">
-			        <legend class="newopLS" align="center">LISTE DES OPERATIONS</legend>
+			 
+			 <fieldset style="margin-top:15px">
+			        <legend class="op_title1" align="center">LISTE DES OPERATIONS</legend>
 			<table class="tableauPlein1" style="height: auto;">
 				<tr>
 					<th>NUMERO OP</th>

@@ -3,135 +3,229 @@ body {
     font-family: "Montserrat", sans-serif;
     min-height: 100%;
     max-height: auto;
-  }
-.tableauPlein1
-{
+}
+
+.tableauPlein1 {
     width: 90%;
     text-align: center;
 }
-.tableauPlein1 a[id="List-Donn"]
-{
+
+.tableauPlein1 a[id="List-Donn"] {
     font-size: large;
     color: blue;
     font-weight: bold;
     text-decoration: none;
 }
-.tableauPlein1 a[id="List-Emp"]
-{
+
+.tableauPlein1 a[id="List-Emp"] {
     font-size: 15px;
     color: crimson;
     font-weight: bold;
     text-decoration: none;
 }
-.tableauPlein1 a
-{
+
+.tableauPlein1 a {
     font-size: large;
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
-table{
+
+table {
     table-layout: auto;
     border-collapse: collapse;
     border: 3px solid rgb(0, 0, 0);
 }
-th{
+
+th {
     padding: 20px;
     letter-spacing: 4px;
     font-size: 20px;
     font-weight: bold;
     font-family: "Montserrat", sans-serif;
-    color:#18d26e;
-    background-color:  #333;
+    color: #18d26e;
+    background-color: #333;
 }
-th[id="alerte"]{
+
+th[id="alerte"] {
     background-color: red;
 }
-td{
+
+td {
     padding: 5px;
 }
-tbody tr:nth-child(odd){
+
+tbody tr:nth-child(odd) {
     background-color: rgb(210, 231, 215);
 }
-#table-legend{
+
+#table-legend {
     border: none;
 }
-td[class="espace-legend"]{
+
+td[class="espace-legend"] {
     width: auto;
     padding: 1px;
     background-color: white;
 }
-#table-ajoutUser{
+
+#table-ajoutUser {
     border: none;
 }
-table[id="table-ajoutUser"] td{
+
+table[id="table-ajoutUser"] td {
     background-color: white;
 }
-  .topnav {
+
+.topnav {
     overflow: hidden;
     background-color: #333;
     padding: 5px;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-  
-  .topnav a:hover[id="nav"] {
+}
+
+.topnav a:hover[id="nav"] {
     background-color: #ddd;
     color: black;
-  }
-  
-  .topnav a.active {
+}
+
+.topnav a.active {
     background-color: #18d26e;
     color: white;
     border-radius: 25px;
-  }
-  .topnav a[class="titre"]{
-      float: left;
-      font-weight: bold;
-      font-size: 25px;
-      color: #18d26e;
-  }
-  .tableauPlein1{
+}
+
+.topnav a[class="titre"] {
+    float: left;
+    font-weight: bold;
+    font-size: 25px;
+    color: #18d26e;
+}
+
+.tableauPlein1 {
     width: 100%;
-  }
-  #formulaire{
+}
+
+#formulaire {
     border: 0px;
     width: 40%;
     border-radius: 25px;
     margin-left: 15%;
-    background-color:#333;
-  }
-  .form-solde{
+    background-color: #333;
+}
+
+.form-solde {
     border: 0px;
     width: 40%;
-    background-color:#333;
+    background-color: #333;
     border-radius: 25px;
     margin-left: 15%;
-  }
-  .form-group{
+}
+
+.form-group {
     width: 80%;
-    border-radius: 20px;
+    border: 20px;
     height: 20px;
     padding: 10px;
     margin-top: 35px;
     display: inline-block;
-  }
-  .form-group1{
+    border: 1px solid black;
+}
+
+.form-group1 {
     width: 85%;
-    border-radius: 20px;
+    border: 2;
     height: 44px;
     padding: 10px;
     margin-top: 35px;
+    border: 1px solid black;
     display: inline-block;
-  }
-  .form-submit{
+}
+
+.form-groupe1 {
+    width: 80%;
+    border: "3";
+    height: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    margin-left: 3%;
+    border: 1px solid black;
+}
+
+.cpt_search {
+    margin-left: 15%;
+    margin-top: 25px;
+    font-size: 25px;
+    font-family: "comic sans ms";
+    color: #18d26e;
+}
+
+.search_op {
+    margin-left: 37%;
+    width: 345px;
+    height: 70px;
+    border-radius: 18px;
+    background-color: #333;
+}
+
+.name_field {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "comic sans ms";
+}
+
+.newOp {
+    margin-top: 15px;
+    border: 0px;
+    width: 60%;
+    background-color: #333;
+    border-radius: 25px;
+    margin-left: 20%;
+}
+
+.field_info {
+    float: left;
+    margin-top: 10px;
+    border: 0px;
+    width: 40%;
+    background-color: #333;
+    border-radius: 25px;
+    margin-left: 5%;
+}
+
+.field_info1 {
+    float: right;
+    border: 0px;
+    width: 40%;
+    background-color: #333;
+    border-radius: 25px;
+    margin-right: 5%;
+}
+
+.op_title {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #18d26e;
+}
+
+.op_title1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    color: #18d26e;
+}
+
+.form-submit {
     width: 30%;
     height: 40px;
     margin-top: 35px;
@@ -141,8 +235,9 @@ table[id="table-ajoutUser"] td{
     font-size: 20px;
     color: rgb(255, 254, 254);
     background-color: #18d26e;
-  }
-  .form-ajout{
+}
+
+.form-ajout {
     width: 70%;
     height: 40px;
     border-radius: 10px;
@@ -151,20 +246,23 @@ table[id="table-ajoutUser"] td{
     font-size: 20px;
     color: rgb(255, 254, 254);
     background-color: #333;
-  }
-  .title{
+}
+
+.title {
     margin-top: 10%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     color: #18d26e;
-  }
-  .title1{
+}
+
+.title1 {
     margin-top: 5%;
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    color: #18d26e; 
-  }
-  .aligner{
+    color: #18d26e;
+}
+
+.aligner {
     margin-right: 2%;
     width: 20%;
     height: 40px;
@@ -174,43 +272,56 @@ table[id="table-ajoutUser"] td{
     font-size: 25px;
     color: rgb(255, 254, 254);
     background-color: #333;
-  }
-footer
-{
+}
+
+footer {
     height: 80px;
     margin-top: 10%;
     background-color: #333;
-    padding:  1px;
+    padding: 1px;
 }
-.dkn{
-  text-align: center;
-  margin-top: 45px;
-  font-size: 20px;
-  color: #ffffff;
-  margin-right: 20%;
+
+.dkn {
+    text-align: center;
+    margin-top: 45px;
+    font-size: 20px;
+    color: #ffffff;
+    margin-right: 20%;
 }
-.d{
+
+.d {
     font-size: large;
     color: #18d26e;
     font-weight: bold;
     text-decoration: none;
 }
-b{
-  color: #18d26e;
-  font-weight: bold;
-  font-size: 20px;
+
+b {
+    color: #18d26e;
+    font-weight: bold;
+    font-size: 20px;
 }
-.all-reserved{
-  margin-top: 15px;
-  float: right;
-  margin-right: 2%;
-  font-size: 15px;
-  color: #ffffff;
+
+.all-reserved {
+    margin-top: 15px;
+    float: right;
+    margin-right: 2%;
+    font-size: 15px;
+    color: #ffffff;
 }
-.title-footer{
-  float: left;
-  font-weight: bold;
-  margin-left: 2%;
-  font-size: 20px;
-  color: #18d26e;
+
+.title-footer {
+    float: left;
+    font-weight: bold;
+    margin-left: 2%;
+    font-size: 20px;
+    color: #18d26e;
+}
+
+.tableauPlein1 a {
+    text-decoration: none;
+    font-family: Agency FB;
+    font-size: 20px;
+    color: #18d26e;
+    margin-left: 10px;
 }

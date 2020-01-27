@@ -26,7 +26,7 @@
             $array[0]++;
             $id = $array[0];
         }
-        $numero = "FSN_".date('d').date('m').date('Y')."_OP".$id;
+        $numero = "BDP_".date('d').date('m').date('Y')."_OP".$id;
         return $numero;
     } 
 	function retrait($numero, $dateOperation, $montant, $idCompte, $idTypeOp, $idUser)

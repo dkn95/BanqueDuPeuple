@@ -23,8 +23,7 @@
         <div >
             <label for="re-pass"></label>
             <select class="form-group1" class="new" name="profil" placeholder="PROFIL">
-                <option selected> </option>
-                <option value="admin">admin</option>
+                <option selected value="admin">admin</option>
             </select>
         </div>
         <div>
